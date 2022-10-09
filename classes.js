@@ -1,13 +1,19 @@
-class person{
-    constructor(name)
-    {
-        this.name = name;
-        getName()
-         {
-            return this.name;
+class Person {
+    constructor(name) {
+        this.setName(name);
+    }
+    getName() {
+        return this.name;
+    }
+    setName(newName) {
+        newName = newName.trim();
+        if (newName === '') {
+            throw 'The name cannot be empty';
         }
+        this.name = newName;
     }
 }
-let stud = new person ("Lucie Lavender");
-let name = stud.getName();
-console.log(name);
+let person = new Person('Jane Doe');
+console.log(person); // Jane Doe
+
+person.setName('jane smith');
