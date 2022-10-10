@@ -96,6 +96,11 @@ sum(10 ,20);
 let name2 =  name1 => console.log(name1);
 name2('Lavendita');
 
+let names = ['John', 'Mac', 'Peter'];
+let lengths = names.map(name4 => name4.length);
+console.log(lengths);  //[ 4, 3, 5 ]
+
+
 
 
 
