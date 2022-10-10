@@ -88,6 +88,14 @@ let bird = new Birds(2);
 bird.walk();
 bird.fly();
 
+//arrow function
+let sum = (x , y) => 
+{console.log( x + y) ;}
+sum(10 ,20);
+
+let name2 =  name1 => console.log(name1);
+name2('Lavendita');
+
 
 
 
