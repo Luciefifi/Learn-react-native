@@ -62,6 +62,32 @@ class Person1 {
 let fname= new Person1('John', 'Doe');
 console.log(fname.fullName);   //John Doe
 
+//inhertance
+class Animal{
+    constructor(legs)
+    {
+        this.legs = legs;
+    }
+    walk ()
+    {
+        console.log('walking on ' +this.legs + ' legs');
+    }
+}
+class Birds extends Animal
+{
+    constructor(legs)
+    {
+        super(legs);
+    }
+    fly()
+    {
+        console.log('flying');
+    }
+}
+let bird = new Birds(2);
+bird.walk();
+bird.fly();
+
 
 
 
